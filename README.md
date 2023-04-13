@@ -1,4 +1,4 @@
-<h1 align="center">Dev-Job-Interview-Discord-Bor-GPT3.5-Turbo</h1>
+<h1 align="center">Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo</h1>
 <table align="center">
   <tr>
     <td align="center" height="108" width="108">
@@ -39,13 +39,13 @@ git init
 ```
 ### Navigate to new git folder in terminal and clone this repository
 ```sh
-git clone https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bor-GPT3.5-Turbo.git
+git clone https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo.git
 ```
-### Navigate to Dev-Job-Interview-Discord-Bor-GPT3.5-Turbo folder and install dependencies
+### Navigate to Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo folder and install dependencies
 ```sh
 npm install
 ```
-### Create new file in Dev-Job-Interview-Discord-Bor-GPT3.5-Turbo folder and name it .env
+### Create new file in Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo folder and name it .env
 ### Place your secret Discord bot token from the first step into the .env file
 ```sh
 TYPE THIS EXACTLY, IT IS CASE SENSITIVE: TOKEN=your_unique_token_here
