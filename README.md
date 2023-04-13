@@ -33,7 +33,7 @@ https://nodejs.org/en/
 ```sh
 https://git-scm.com/downloads
 ```
-### Create a new folder and navigate to it in terminal to set up git
+### Create a new folder and open in terminal to set up git
 ```sh
 git init
 ```
