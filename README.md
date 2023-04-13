@@ -9,7 +9,7 @@
         <br /><strong>Discord.js</strong>
     </td>
     <td align="center" height="108">
-      <p align="center">A job interview preparation bot for junior web developers. The bot asks and answers common job interview questions as well as provides code challenges and tasks that are commonly found in real world job interviews. This simple vanilla javascript Discord bot functions by interacting with the new language model GPT-3.5-Turbo by OpenAI.
+      <p align="center">A job interview preparation bot for junior web developers. The bot asks and answers common job interview questions as well as provides code challenges and tasks that are commonly found in real world job interviews. This simple vanilla javascript Discord bot functions by interacting with the new language model GPT-3.5-Turbo by OpenAI. One word dubject prompt such as "React", optional difficulty of question with 1/10, 2/10 etc. To get an answer to the previous question type "***" in the prompt.
       </p>
      </td>
    </tr>
