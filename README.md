@@ -47,14 +47,14 @@ git clone https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bot-GPT3.5-T
 ```sh
 npm install
 ```
-### Create new file in Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo folder and name it .env
+### Rename example_.env to .env
 ### Place your secret Discord bot token from the first step into the .env file
 ```sh
-TYPE THIS EXACTLY, IT IS CASE SENSITIVE: TOKEN=your_unique_token_here
+TOKEN=your_unique_token_here
 ```
 ### Place your secret OpenAI API key from the second step into the .env file
 ```sh
-TYPE THIS EXACTLY, IT IS CASE SENSITIVE: OPENAI_API_KEY=your_unique_API_key_here
+OPENAI_API_KEY=your_unique_API_key_here
 ```
 ### To host the bot locally, open project in terminal and run node
 ```sh
