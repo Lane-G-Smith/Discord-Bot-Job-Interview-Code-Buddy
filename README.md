@@ -9,7 +9,7 @@
         <br /><strong>Discord.js</strong>
     </td>
     <td align="center" height="108">
-      <p align="center">A job interview preparation bot for junior web developers. The bot asks and answers common job interview questions as well as provides code challenges and tasks that are commonly found in real world job interviews. This simple vanilla javascript Discord bot functions by interacting with the new language model GPT-3.5-Turbo by OpenAI. Use one word subject prompts such as "React", optional difficulty of question with 1/10, 2/10 etc. To get an answer to the previous question type "***" in the prompt.
+      <p align="center">This Discord bot is designed to help junior web developers prepare for job interviews. This bot offers practice questions and coding challenges that are commonly found in real-world interviews. You can request questions or tasks with prompts such as "React" or "Javascript." Optionally, you can also specify the difficulty level between 1 and 10 with 1/10, 2/10, etc. To check your answer to the previous question along with receive an explanation and links to documentation, simply type "***" along with your answer. This bot functions by using the GPT-3.5-Turbo API.
       </p>
      </td>
    </tr>
