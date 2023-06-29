@@ -15,7 +15,7 @@
    </tr>
  </table>
 
-# Installation and deloyment Instructions
+# Installation and deployment Instructions
 
 # !!This bot does NOT respond to DMs, it must be in a server with you!!
 
@@ -35,15 +35,15 @@ https://nodejs.org/en/
 ```sh
 https://git-scm.com/downloads
 ```
-### Create a new folder and open in terminal to set up git
+### Create a new folder and open it in the terminal to set up git
 ```sh
 git init
 ```
-### Navigate to new git folder in terminal and clone this repository
+### Navigate to the new git folder in the terminal and clone this repository
 ```sh
 git clone https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo.git
 ```
-### Navigate to Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo folder and install dependencies
+### Navigate to the Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo folder and install dependencies
 ```sh
 npm install
 ```
@@ -56,19 +56,19 @@ TOKEN=your_unique_token_here
 ```sh
 OPENAI_API_KEY=your_unique_API_key_here
 ```
-### To host the bot locally, open project in terminal and run node
+### To host the bot locally, open the project in the terminal and run node
 ```sh
-node index.js
+node code.js
 ```
 ### To host the bot locally and keep it running in the background indefinitely, install PM2
 ```sh
 npm install pm2 -g
 ```
-### run your bot locally using pm2 https://pm2.keymetrics.io/
+### Run your bot locally using pm2 https://pm2.keymetrics.io/
 ```sh
-pm2 start index.js
+pm2 start code.js
 ```
-### congratulations, your bot should now be live & confirmation should be logged in the terminal. Use your personal link from the Discord developer portal to invite your bot to a Discord server
+### Congratulations, your bot should now be live & confirmation should be logged in the terminal. Use your personal link from the Discord developer portal to invite your bot to a Discord server
 ```sh
 https://discord.com/developers/applications
 ```
