@@ -21,44 +21,60 @@ const client = new Client({
   ],
 });
 
-// console log when bot is logged in
+// console log when the bot is logged in
 client.on("ready", () => {
   console.log(`I'M ALIVE!! LOGGED IN AS ${client.user.tag}`);
 });
 
-// function returns a response in form of question about user input subject ranked in difficulty from 1-10
+// function returns a response in the form of a question about the user input subject ranked in difficulty from 1-10
 client.on("messageCreate", async function (message) {
   try {
 
 // ignore input from the bot itself
       if (message.author.bot) return;
 
-// ignore input that contains a *** (used to trigger the next answer function)
-      else if (message.content.toLowerCase().includes("***")) return;
+// ignore input that contains "answer" (used to trigger the next answer function)
+      else if (message.content.toLowerCase().startsWith("answer")) return;
 
 // message must start with !!! to trigger a question
-      else if (message.content.toLowerCase().startsWith("!!!")) {
+      else if (message.content.toLowerCase().startsWith("code-buddy")) {
 
 // AI personality and response to user input 
       const completion = await openai.createChatCompletion({
       model: "gpt-3.5-turbo",
       messages: [{
-        role:"system",
-        content:"You are interviewing an applicant for junior javascript web developer. The ideal applicant is proficient in HTML, CSS, Javascript, React, Nodejs, Mongodb, Expressjs, etc. You ask questions, provide short coding challenges &  other common tasks from web developer interviews. The subject of your question will be in the prompt, if no subject is specified then the subject is random. Give each question a difficulty rating between 1 and 10 written like 1/10, 2/10, etc. Provide questions/challenges/tasks of a specific difficulty when prompted, difficulty is random if not specified. Ignore !!! in messages."},{
-        role:"user",
-        content:"!!! javascript 2" },{
-        role:"assistant",
-        content:"in the following array which item is at position zero? fruits[apple, banana, orange, pear] 2/10"},{
-        role:"user",
-        content:"!!! html"},{
-        role:"assistant",
-        content:"what does html stand for? 1/10"},{
+        role: "system",
+        content: "You are interviewing an applicant for a junior javascript web developer position. The ideal applicant is proficient in HTML, CSS, Javascript, React, Nodejs, Mongodb, Expressjs, etc. You ask questions, provide short coding challenges &  other common tasks from web developer interviews. The subject of your question will be in the prompt, if no subject is specified then the subject is random. Give each question a difficulty rating between 1 and 10 written like 1/10, 2/10, etc. Provide questions/challenges/tasks of a specific difficulty when prompted, difficulty is random if not specified. Ignore any mention of code-buddy in messages."},{
+        role: "user",
+        content:"code-buddy javascript 2" },{
+        role: "assistant",
+        content: "In the following array which item is at position zero? fruits[apple, banana, orange, pear] 2/10"},{
+        role: "user",
+        content: "code-buddy HTML"},{
+        role: "assistant",
+        content: "What does HTML stand for? 1/10"},{
         role:"user",
         content:`${message.content}`},],
       });
 
 // respond with the answer (initial challenge question)
-        message.reply(`${completion.data.choices[0].message.content}`);
+        // store response in data variable
+        data = (`${completion.data.choices[0].message.content}`);
+
+// less than 2000 character response
+          if (data.length < 2000) {
+          message.reply(`${data}`)
+          }
+
+// more than 2000 character response
+          else if (data.length > 2000){
+          partOne = data.substring(0,2000);
+          partTwo = data.substring(2000,4000);
+          partThree = data.substring(4000,6000);
+          message.reply(`${partOne}`);
+          message.reply(`${partTwo}`);
+          message.reply(`${partThree}`);
+          }
 
 // save the question to use as the prompt for the answer function
       return (responseOne = completion.data.choices[0].message.content);
@@ -77,7 +93,7 @@ client.on("messageCreate", async function (message) {
     if (message.author.bot) return;
 
 // ignore input that doesn't contain a ***
-    else if (message.content.toLowerCase().includes("***")) {
+    else if (message.content.toLowerCase().startsWith("answer")) {
       const completion = await openai.createChatCompletion({
         model: "gpt-3.5-turbo",
         messages: [{
@@ -91,7 +107,25 @@ client.on("messageCreate", async function (message) {
           content:`${responseOne}`},
         ],
       });
-      message.reply(`${completion.data.choices[0].message.content}`);
+
+// store response in data variable
+          data = (`${completion.data.choices[0].message.content}`);
+
+// respond with the answer (initial challenge question)
+// less than 2000 character response
+          if (data.length < 2000) {
+          message.reply(`${data}`)
+          }
+
+// more than 2000 character response
+          else if (data.length > 2000){
+          partOne = data.substring(0,2000);
+          partTwo = data.substring(2000,4000);
+          partThree = data.substring(4000,6000);
+          message.reply(`${partOne}`);
+          message.reply(`${partTwo}`);
+          message.reply(`${partThree}`);
+          }
     }
 
 // send error messages
@@ -102,3 +136,4 @@ client.on("messageCreate", async function (message) {
 
 // use token from env file to log in
 client.login(process.env.TOKEN);
+
