@@ -9,7 +9,7 @@
         <br /><strong>Discord.js</strong>
     </td>
     <td align="center" height="108">
-      <p align="left">This Discord bot is designed to help junior web developers prepare for job interviews. This bot offers practice questions and coding challenges that are commonly found in real-world interviews. You can request questions or tasks with prompts such as "React" or "Javascript." Optionally, you can also specify the difficulty level between 1 and 10 with a number (example: javascript 7). To get the answer to the previous question along with an explanation and links to documentation, simply type "***". This bot functions by using the GPT-3.5-Turbo API.
+      <p align="left">This Discord bot is designed to help junior web developers prepare for job interviews. This bot offers practice questions and coding challenges that are commonly found in real-world interviews. You can request questions or tasks with prompts such as "React" or "Javascript." Optionally, you can also specify the difficulty level between 1 and 10 with a number (example: javascript 7). To get the answer to the previous question along with an explanation and links to documentation, simply type "answer". This bot functions by using the GPT-3.5-Turbo-0613 API.
       </p>
      </td>
    </tr>
@@ -17,7 +17,7 @@
 
 # Installation and deployment Instructions
 
-# !!This bot does NOT respond to DMs, it must be in a server with you!!
+## !!This bot does NOT respond to DMs, it must be in a server with you!!
 
 ### Get the bot 'shell' from Discord. It's free, and it takes 5 minutes
 ```sh
