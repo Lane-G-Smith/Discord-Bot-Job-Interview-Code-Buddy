@@ -1,4 +1,4 @@
-<h1 align="center">Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo</h1>
+<h1 align="center">Discord-Bot-Job-Interview-Code-Buddy</h1>
 <table align="center">
   <tr>
     <td align="center" height="108" width="108">
@@ -41,7 +41,7 @@ git init
 ```
 ### Navigate to the new git folder in the terminal and clone this repository
 ```sh
-git clone https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo.git
+git clone https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy.git
 ```
 ### Navigate to the Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo folder and install dependencies
 ```sh
