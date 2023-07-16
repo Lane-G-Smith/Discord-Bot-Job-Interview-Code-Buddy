@@ -1,14 +1,14 @@
 {
-  "name": "Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo",
+  "name": "Discord-Bot-Job-Interview-Code-Buddy",
   "version": "1.0.0",
-  "description": "Vanilla Javascript Discord Bot, asks and answers web dev job interview questions using OpenAI gpt-3.5-Turbo",
-  "main": "index.js",
+  "description": "Vanilla Javascript Discord Bot, asks and answers web dev job interview questions using OpenAI ChatGPT-3.5-Turbo-0613",
+  "main": "code.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo.git"
+    "url": "git+https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy.git"
   },
   "keywords": [
     "Discord",
@@ -22,9 +22,9 @@
   "author": "Lane G Smith",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo/issues"
+    "url": "https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy/issues"
   },
-  "homepage": "https://github.com/Lane-G-Smith/Dev-Job-Interview-Discord-Bot-GPT3.5-Turbo#readme",
+  "homepage": "https://github.com/Lane-G-Smith/Discord-Bot-Job-Interview-Code-Buddy#readme",
   "dependencies": {
     "discord.js": "^14.7.1",
     "dotenv": "^16.0.3",
